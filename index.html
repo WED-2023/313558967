@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Picker Test</title>
+    <!-- Include Emoji Button library -->
+    <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.6.0/dist/emoji-button.min.js"></script>
+
 </head>
 <body>
   <div id="menu">
@@ -19,7 +25,6 @@
     </nav>
   </div>
 
-		  
 <section id="about" class="section">
 <br/>
 <br/>
@@ -100,27 +105,36 @@ ans
 </section>
 
 <section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <label for="message">Message Content:</label><br>
+        <!-- Display selected emoji in the text box -->
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        <!-- Select dropdown for emojis -->
+        <label for="emoji">Select Emoji:</label>
+        <select id="emoji" name="emoji">
+            <option value="😊">😊 Smiling Face</option>
+            <option value="😄">😄 Grinning Face</option>
+            <option value="😃">😃 Smiling Face with Open Mouth</option>
+            <option value="😁">😁 Beaming Face with Smiling Eyes</option>
+        </select><br><br>
+        <input type="button" value="Send" onclick="sendMail()">
+    </form>
 <br/>
 </section>
+
+<script>
+function sendMail() {
+    var message = document.getElementById("message").value;
+    var emoji = document.getElementById("emoji").value; // Get the selected emoji
+    // Append the emoji to the message content
+    message += emoji;
+    var mailtoLink = "mailto:raananpevzner95@gmail.com?body=" + encodeURIComponent(message);
+    window.location.href = mailtoLink;
+    // Clear the text box after sending the message
+    document.getElementById("message").value = "";
+}
+</script>
 
 
 <script type="text/javascript">
