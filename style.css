@@ -1,7 +1,100 @@
-#menu
-{
-	position: fixed;
-	width: 100%;
-	height: 35px;
-	background: white;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light gray */
+}
+
+/* Style the menu container */
+nav {
+    background: linear-gradient(to right, #333, #000); /* Gradient background */
+    border-radius: 0; /* Remove rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Style the menu items */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+	font-size: 26 px; /* Adjust font size */
+
+}
+
+a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white on hover */
+}
+
+/* Additional styles for sections */
+
+.section {
+    padding: 50px;
+    text-align: center;
+    color: #495057; /* Dark gray */
+}
+
+#about {
+    background-color: #4e79a7; /* Darker blue */
+    color: #ffffff; /* White */
+}
+
+#photos {
+    background-color: #61c0bf; /* Darker green */
+}
+
+#photos table {
+    border-collapse: collapse;
+}
+
+/* Style the table cells */
+#photos td {
+    padding: 5px;
+}
+
+/* Style the images */
+#photos img {
+    width: 70%;
+    height: auto;
+}
+
+#playlist {
+    background-color: #f28e2b; /* Darker yellow */
+}
+
+#like {
+    background-color: #d85a71; /* Darker red */
+}
+
+#qrcoder {
+    background-color: #9467bd; /* Darker purple */
+}
+
+#spa {
+    background-color: #17a2b8; /* Turquoise */
+}
+
+#contact {
+    background-color: #a6a6a6; /* Darker gray */
 }
