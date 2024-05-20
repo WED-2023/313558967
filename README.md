@@ -1,8 +1,8 @@
 Author: Raanan Pevzner - 313558967
 
-===================================
+
 Maria Simkin's Personal Website - url:  https://wed-2023.github.io/313558967/
-===================================
+
 
 Welcome to Maria Simkin's personal website!
 
@@ -30,9 +30,10 @@ This website serves as a tribute to Maria Simkin's life journey, showcasing her 
    - Reach out to Maria Simkin with any questions, stories, or thoughts you'd like to share.
 
 
-===================================
+
+
+
 Technologies Used
-===================================
 
 - HTML
 - CSS
@@ -40,17 +41,21 @@ Technologies Used
 - Swiper.js (for photo carousel)
 - Font Awesome (for icons)
 
-===================================
+
+
+
+
 Credits
-===================================
 
 This website is designed and developed by Raanan Pevzner. 
 
 Special thanks to my awesome grandmother Maria Simkin for letting me do a website about her.
 
-===================================
+
+
+
+
 Feedback and Support
-===================================
 
 For any feedback, suggestions, or issues related to the website, please contact raananp@post.bgu.ac.il.
 
@@ -58,9 +63,9 @@ Enjoy exploring Maria Simkin's website!
 
 
 
-===================================
+
+
 Submission Notes
-===================================
 
 1.  The like button functionality is designed to limit each user to a single interaction, mimicking real-life scenarios where
     a person typically expresses their approval or appreciation once. This approach ensures that the like button maintains its 
