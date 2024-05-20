@@ -150,30 +150,31 @@ ans
   }
 
   document.addEventListener("DOMContentLoaded", function() {
-    const likeButton = document.getElementById("likeButton");
-    const likeCount = document.getElementById("likeCount");
+        const likeButton = document.getElementById("likeButton");
+        const likeCount = document.getElementById("likeCount");
 
-    // Initialize like count and button state from localStorage
-    let likes = localStorage.getItem("likes") || 0;
-    let liked = localStorage.getItem("liked") || "false";
+        // Initialize like count from localStorage
+        let likes = parseInt(localStorage.getItem("likes") || "0", 10);
+        let sessionLiked = sessionStorage.getItem("liked") || "false";
 
-    likeCount.textContent = likes;
-    if (liked === "true") {
-        likeButton.disabled = true;
-        likeButton.classList.add("liked");
-    }
+        likeCount.textContent = likes;
 
-    likeButton.addEventListener("click", function() {
-        if (liked === "false") {
-            likes++;
-            likeCount.textContent = likes;
-            localStorage.setItem("likes", likes);
-            localStorage.setItem("liked", "true");
+        if (sessionLiked === "true") {
             likeButton.disabled = true;
             likeButton.classList.add("liked");
         }
+
+        likeButton.addEventListener("click", function() {
+            if (sessionLiked === "false") {
+                likes++;
+                likeCount.textContent = likes;
+                localStorage.setItem("likes", likes);
+                sessionStorage.setItem("liked", "true");
+                likeButton.disabled = true;
+                likeButton.classList.add("liked");
+            }
+        });
     });
-});
 </script>
 
 
