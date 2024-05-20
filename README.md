@@ -2,7 +2,7 @@
 
 Author: Raanan Pevzner - 313558967
 
-Website URL: [Maria Simkin's Personal Website](https://wed-2023.github.io/313558967/)
+Website URL: [Maria Simkin's Personal Website](https://wed-2023.github.io/313558967/) ("https://wed-2023.github.io/313558967/")
 
 ## Welcome to Maria Simkin's personal website!
 
