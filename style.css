@@ -86,6 +86,37 @@ a:hover {
 #like {
     background-color: #d85a71; /* Darker red */
 }
+#likeButton {
+    background: #4267B2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+}
+
+#likeButton:hover {
+    background: #365899;
+}
+
+.like-icon {
+    margin-right: 8px;
+    color: #fff;
+}
+
+#likeCount {
+    font-size: 20px;
+    margin-left: 10px;
+    color: #4267B2;
+}
+
+#likeButton.liked {
+    background: #365899;
+    cursor: not-allowed;
+}
 
 #qrcoder {
     background-color: #9467bd; /* Darker purple */
