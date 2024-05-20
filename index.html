@@ -6,7 +6,8 @@
   <title>Elderly Person's Website</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
   <div id="menu">
@@ -27,43 +28,51 @@
 <section id="about" class="section">
 <br/>
 <br/>
-about me
-<p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula sapien quis nisi dictum, eget pulvinar velit faucibus. Donec nec ipsum nec nisi consequat mattis. In at fermentum arcu. Duis auctor ante sed malesuada tempus. Nam sagittis turpis sed ipsum convallis, a sodales magna vehicula. Sed efficitur libero ac ex bibendum, ac gravida felis efficitur. Sed euismod dolor quis est finibus, sit amet scelerisque justo sollicitudin. Aenean rhoncus odio at libero tempor, id venenatis justo consequat. Vivamus posuere velit nec turpis commodo, vel ullamcorper ipsum scelerisque. Nullam sit amet enim eget dui viverra vestibulum non eget justo. Ut fringilla lorem vel nibh rutrum, at malesuada ex accumsan. Sed sed libero tincidunt, bibendum nisi non, commodo quam. Vestibulum efficitur risus quis nulla ultricies, at eleifend velit egestas. Donec a augue dictum, molestie orci in, sollicitudin justo.
-  Fusce vel est eu justo congue vestibulum. Ut ultricies fringilla libero eget malesuada. Integer auctor massa sit amet nisi fermentum, at interdum tortor tristique. Aliquam a arcu ultricies, vehicula diam vel, hendrerit sem. Morbi sit amet luctus neque. Sed eget volutpat mauris, vel auctor libero. Phasellus ut enim at neque tempor varius nec nec dolor. Vivamus et posuere magna. Proin non ligula at elit ultricies ullamcorper. Nulla posuere justo et odio iaculis lacinia. Curabitur mattis metus a libero finibus, quis viverra dolor fermentum. Sed et vestibulum tortor, at fermentum nisl. Morbi vel semper velit, nec ultrices velit. Integer efficitur magna eget tincidunt aliquet. Ut dictum tortor eu convallis viverra.
-</p>
-<br/>
-<br/>
-<br/>
+<h2>About Me</h2>
+<h2>Hello, I'm Maria Simkin</h2>
+<p>Born in the 1930s in the Soviet Union, my life has been a journey of resilience and love. Despite facing antisemitism in my childhood, I pursued education fervently and became a distinguished dentist after graduating from the top medical school in the Soviet Union.</p>
+<p>I've cherished family deeply, raising four children with my late husband and embracing a blended family later in life. In 1990, we moved to Israel, settling in Eilat where we became the first Russians to call it home. Our pioneering spirit infused the community with vibrancy and diversity.</p>
+<p>Today, Eilat is not just a city; it's our cherished home. Join me as I reflect on a life filled with love, laughter, and adventure. This website is a tribute to the journey that shaped me, a testament to the resilience and courage that define my story.</p>
+<p>Feel free to reach out to me via email below. I invite you to share your questions, stories, and thoughts.</p>
+<p>With warm regards,<br>Maria Simkin</p>
 </section>
 
 <section id="photos" class="section">
-  <table>
-    <tr>
-        <td><img src="design/ff1.jpeg" alt="Family Photo 1"></td>
-        <td><img src="design/ff2.jpeg" alt="Family Photo 2"></td>
-        <td><img src="design/ff3.jpeg" alt="Family Photo 3"></td>
-    </tr>
-    <tr>
-        <td><img src="design/ff4.jpeg" alt="Family Photo 4"></td>
-        <td><img src="design/ff5.jpeg" alt="Family Photo 5"></td>
-        <td><img src="design/ff6.jpeg" alt="Family Photo 6"></td>
-    </tr>
-</table>
+<br/>
+<br/>
+  <h2>Photos</h2>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="design/logo1.png" alt="Family Photo 1"></div>
+      <div class="swiper-slide"><img src="design/ff1.jpeg" alt="Family Photo 2"></div>
+      <div class="swiper-slide"><img src="design/ff3.jpeg" alt="Family Photo 3"></div>
+      <div class="swiper-slide"><img src="design/ff4.jpeg" alt="Family Photo 4"></div>
+      <div class="swiper-slide"><img src="design/ff5.jpeg" alt="Family Photo 5"></div>
+      <div class="swiper-slide"><img src="design/ff6.jpeg" alt="Family Photo 6"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Navigation -->
+
+    <br>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
 </section>
 
 <section id="playlist" class="section">
 <br/>
-my playlist
+<br/>
+<br/>
+<h2>my playlist</h2>
 <br/>
 <br/>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QAHmA0N8RRA?si=xK3SwmqM_ytPgQgM&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<br/>
-<br/>
-<br/>
 </section>
 
 <section id="like" class="section">
+  <br/>
+  <br/>
   <h2>Like</h2>
   <button id="likeButton"><i class="fas fa-thumbs-up like-icon"></i> Like</button>
   <span id="likeCount">0</span> likes
@@ -72,7 +81,9 @@ my playlist
 
 <section id="qrcoder" class="section">
 <br/>
-scan my code
+<br/>
+<br/>
+<h2>Scan the QR</h2>
 <br/>
 <br/>
 <img src="design/qr-code.png" alt="QR" style="height: 600px;"></td>
@@ -83,20 +94,7 @@ scan my code
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
+<h2>Q&A</h2>
 <br/>
 <br/>
 <br/>
@@ -105,6 +103,8 @@ ans
 <section id="contact" class="section">
     <h2>Contact Us</h2>
     <form id="contactForm">
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject"><br><br>
         <label for="message">Message Content:</label><br>
         <!-- Display selected emoji in the text box -->
         <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
@@ -121,6 +121,9 @@ ans
 <br/>
 </section>
 
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 <script>
   document.addEventListener('DOMContentLoaded', (event) => {
       const likeButton = document.getElementById('likeButton');
@@ -135,19 +138,34 @@ ans
 
           localStorage.setItem('likeCount', count);
       });
+
+      // Initialize Swiper
+      var swiper = new Swiper('.swiper-container', {
+          loop: true,
+          pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+          },
+          navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+          },
+      });
   });
 
   function sendMail() {
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
-      const emoji = document.getElementById('emoji').value;
-      const mailtoLink = `mailto:raananpevzner95@gmail.com?subject=Contact&body=${encodeURIComponent(message)} ${emoji}`;
-      window.location.href = mailtoLink;
+    const subject = document.getElementById('subject').value; // Get the subject value
+    const message = document.getElementById('message').value;
+    const emoji = document.getElementById('emoji').value;
+    const mailtoLink = `mailto:raananpevzner95@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)} ${emoji}`;
+    window.location.href = mailtoLink;
 
-      document.getElementById('message').value = '';
-      document.getElementById('email').value = '';
-      document.getElementById('emoji').selectedIndex = 0;
-  }
+    document.getElementById('subject').value = ''; // Clear the subject field after sending
+    document.getElementById('message').value = '';
+    document.getElementById('emoji').selectedIndex = 0;
+}
+
+
 
   document.addEventListener("DOMContentLoaded", function() {
         const likeButton = document.getElementById("likeButton");
@@ -176,7 +194,6 @@ ans
         });
     });
 </script>
-
 
 <script type="text/javascript">
 $(function(){

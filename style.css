@@ -3,6 +3,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f9fa; /* Light gray */
+    background-image: url('design/background.jpg'); /* Replace 'path/to/your/background-image.jpg' with the path to your background image */
+    background-size: cover; /* Cover the entire background */
+    background-attachment: fixed; /* Keep the background fixed while scrolling */
+
 }
 
 /* Style the menu container */
@@ -55,37 +59,6 @@ a:hover {
     color: #495057; /* Dark gray */
 }
 
-#about {
-    background-color: #4e79a7; /* Darker blue */
-    color: #ffffff; /* White */
-}
-
-#photos {
-    background-color: #61c0bf; /* Darker green */
-}
-
-#photos table {
-    border-collapse: collapse;
-}
-
-/* Style the table cells */
-#photos td {
-    padding: 5px;
-}
-
-/* Style the images */
-#photos img {
-    width: 70%;
-    height: auto;
-}
-
-#playlist {
-    background-color: #f28e2b; /* Darker yellow */
-}
-
-#like {
-    background-color: #d85a71; /* Darker red */
-}
 #likeButton {
     background: #4267B2;
     color: #fff;
@@ -119,14 +92,68 @@ a:hover {
 }
 
 
-#qrcoder {
-    background-color: #9467bd; /* Darker purple */
+
+.swiper-container {
+    width: 80%; /* Adjust the width as needed */
+    height: auto;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden; /* Hide overflow to prevent scrolling */
 }
 
-#spa {
-    background-color: #17a2b8; /* Turquoise */
+/* Adjust Swiper slide */
+.swiper-slide {
+    width: 100%; /* Each slide occupies the entire width */
+    text-align: center;
 }
 
-#contact {
-    background-color: #a6a6a6; /* Darker gray */
+/* Adjust Swiper image */
+.swiper-slide img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Adjust Swiper pagination position */
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px; /* Adjust the distance from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* Ensure the pagination is above the images */
+}
+
+/* Style pagination bullets */
+.swiper-pagination-bullet {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    opacity: 0.5;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+    background: #fff;
+    opacity: 1;
+}
+
+/* Adjust Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    top: 50%; /* Position the arrows at the vertical center of the swiper */
+    transform: translateY(-50%); /* Adjust the arrows to be vertically centered */
+    z-index: 20; /* Ensure the arrows are above the images and pagination */
+    color: #fff; /* Adjust arrow color */
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust arrow background color */
+    padding: 10px; /* Add padding for better clickability */
+}
+
+.swiper-button-prev {
+    left: 10px; /* Adjust the distance from the left side */
+}
+
+.swiper-button-next {
+    right: 10px; /* Adjust the distance from the right side */
 }
